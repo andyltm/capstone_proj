@@ -90,8 +90,8 @@ const AddSongForm = ({ firstlabel, secondlabel, thirdlabel }) => {
 
   return (
     <form class="my-form"
-      onSubmit={(e) => {
-               fetch('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=demo'
+      onSubmit={(e) => {fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stkcode}&apikey=GFPMXJD7GKNLYSHN`
+               //fetch('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=demo'
              /*    https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stkcode}&apikey=GFPMXJD7GKNLYSHN */
        // https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=demo'
        )
